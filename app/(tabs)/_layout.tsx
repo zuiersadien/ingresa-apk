@@ -32,6 +32,17 @@ export default function TabLayout() {
           ),
         }}
       />
+
+      <Tabs.Screen
+        name="marcador"
+        options={{
+          title: 'Marcador',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'hourglass' : 'hourglass-outline'} color={color} />
+          ),
+        }}
+      />
+      
     </Tabs>
   );
 }
